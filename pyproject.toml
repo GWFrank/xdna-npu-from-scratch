@@ -1,0 +1,14 @@
+[project]
+name = "xdna-npu-from-scratch"
+version = "0.1.0"
+description = "Writing computes on AMD XDNA NPU from scratch"
+readme = "README.md"
+authors = [{ name = "Huai-Yuan Kuo", email = "frankkuo@protonmail.com" }]
+requires-python = "~=3.14.0"
+dependencies = ["mlir-aie==1.4.4", "llvm-aie==22.0.0.2026092101+0006955e"]
+
+[tool.uv]
+find-links = [
+    "https://github.com/Xilinx/mlir-aie/releases/expanded_assets/v1.4.4",
+    "https://github.com/Xilinx/llvm-aie/releases/expanded_assets/nightly",
+]
